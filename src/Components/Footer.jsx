@@ -4,7 +4,7 @@ import { FiTruck, FiMapPin, FiShield, FiHeadphones } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-white pt-16 pb-10">
+    <footer className="w-full text-white pt-16 pb-10 ">
 
 {/* Top Info Row */}
 <div className="w-full border-b border-gray-200">
