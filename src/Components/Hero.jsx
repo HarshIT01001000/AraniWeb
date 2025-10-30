@@ -28,14 +28,14 @@ export default function Hero() {
           {/* Button */}
           <button className="bg-[#0B2D4B] text-white px-8 py-3 flex items-center gap-2 rounded-full hover:bg-[#0a233b] transition-all mx-auto md:mx-0">
             <HiOutlineShoppingBag className="text-xl" />
-            SHOP NOW
+            SHOP NOW shop now knqlkcnwfnfkn
           </button>
         </div>
 
         {/* Right Image */}
         <div className="mt-10 md:mt-0">
           <img
-            src="Sofa1.png"
+            // src="Sofa1.png"
             alt="furniture"
             className="w-[600px] max-w-full"
           />
