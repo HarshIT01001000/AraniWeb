@@ -6,12 +6,12 @@ import Navbar from './Components/Navbar'
 function App() {
 
   return (
-    <>
+    <div className='bg-white text-black'>
       <Navbar></Navbar>
       <Hero></Hero>
       <DecorArticle></DecorArticle>
       <Footer></Footer>
-    </>
+    </div>
   )
 }
 

@@ -8,8 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full z-30 absolute top-0 left-0">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+    <nav className="w-full z-30 absolute top-0 left-0 md:bg-transparent  bg-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
 
         {/* LEFT SECTION */}
         <div className="flex items-center gap-10">
@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+          <ul className="hidden md:flex lg:text-xl items-center gap-8 text-gray-700 font-medium">
             <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
 
             <li className="flex items-center gap-2 hover:text-[#0B2D4B] cursor-pointer">
@@ -61,7 +61,7 @@ export default function Navbar() {
           isOpen ? "max-h-96 py-4" : "max-h-0 py-0"
         }`}
       >
-        <ul className="flex flex-col gap-4 px-6 text-gray-700 font-medium border-t">
+        <ul className="flex flex-col gap-4 px-6 text-gray-700 font-medium">
           <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
           <li className="hover:text-[#0B2D4B] cursor-pointer">Shop</li>
           <li className="hover:text-[#0B2D4B] cursor-pointer">Collections</li>
