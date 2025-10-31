@@ -43,7 +43,7 @@ export default function Home() {
 
   return (
     <section
-      className={`relative w-full min-h-screen flex items-center justify-center overflow-hidden ${hero.bgColor}`}
+      className={`relative w-full md:max-h-screen min-h-screen flex items-center justify-center overflow-hidden ${hero.bgColor}`}
     >
       {/* Desktop Half-Circle */}
       <div className="absolute inset-0 flex justify-end items-center">

@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full z-30 absolute top-0 left-0 md:bg-transparent  pt-4 bg-white">
-      <div className="max-w-6xl mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
+      <div className="max-w-8xl mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
 
         {/* LEFT SECTION */}
         <div className="flex items-center gap-10">
@@ -23,25 +23,17 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex lg:text-xl items-center gap-8 text-gray-700 font-medium">
-            <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
-
-            <li className="flex items-center gap-2 hover:text-[#0B2D4B] cursor-pointer">
-              Shop
-              <span className="bg-[#0B2D4B] text-white text-xs px-2 py-0.5 rounded-md">
-                HOT
-              </span>
-            </li>
-
-            <li className="hover:text-[#0B2D4B] cursor-pointer">Collections</li>
-            <li className="hover:text-[#0B2D4B] cursor-pointer">Pages</li>
-            <li className="hover:text-[#0B2D4B] cursor-pointer">Blog</li>
-            <li className="hover:text-[#0B2D4B] cursor-pointer">Contact</li>
+          <ul className="hidden md:flex lg:text-2xl items-center gap-8 text-gray-700 font-medium">
+           <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">About us</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">Products</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">Services</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">Contact us</li>
           </ul>
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="hidden md:flex items-center gap-6 text-[#0B2D4B]">
+        <div className="hidden md:flex lg:text-2xl items-center gap-6 text-[#0B2D4B]">
           <FiSearch className="text-xl cursor-pointer" />
           <p className="font-semibold cursor-pointer">My account</p>
         </div>
@@ -63,11 +55,10 @@ export default function Navbar() {
       >
         <ul className="flex flex-col gap-4 px-6 text-gray-700 font-medium">
           <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Shop</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Collections</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Pages</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Blog</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Contact</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">About us</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">Products</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">Services</li>
+          <li className="hover:text-[#0B2D4B] cursor-pointer">Contact us</li>
         </ul>
       </div>
     </nav>
