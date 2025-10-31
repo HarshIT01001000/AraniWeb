@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full z-30 absolute top-0 left-0 md:bg-transparent  bg-white">
+    <nav className="w-full z-30 absolute top-0 left-0 md:bg-transparent  pt-4 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
 
         {/* LEFT SECTION */}
