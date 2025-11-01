@@ -61,7 +61,7 @@ const MarqueeBrands = ({ brands }) => {
   const totalWidthToScroll = elementWidth * (brands.length / 2);
 
   return (
-    <div className="overflow-hidden whitespace-nowrap py-4 border-y border-gray-100 mb-16 bg-white text-black">
+    <div className="overflow-hidden whitespace-nowrap py-4 border-y border-gray-100 mb-16 mt-20 bg-white text-black">
       <motion.div
         className="inline-flex" 
         animate={{

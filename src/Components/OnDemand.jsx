@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 export default function OnDemand() {
-
-
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -10,8 +9,6 @@ export default function OnDemand() {
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-20">
-
-
       {/* Bottom Image Grid (omitted for brevity, no changes needed here) */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -30,9 +27,11 @@ export default function OnDemand() {
             <h3 className="text-3xl font-semibold text-gray-900">
               Wooden <br /> <span className="font-bold">classic table</span>
             </h3>
-            <button className="btn mt-3 bg-[#0B2D4B] text-white hover:bg-[#103C64]">
-              Explore category
-            </button>
+            <Link to="/products">
+              <button className="btn mt-3 bg-[#0B2D4B] text-white hover:bg-[#103C64]">
+                Explore category
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -48,9 +47,11 @@ export default function OnDemand() {
               <h3 className="text-2xl font-semibold text-gray-900">
                 Pottery <br /> <span className="font-bold">products</span>
               </h3>
-              <button className="btn mt-3 bg-[#0B2D4B] text-white hover:bg-[#103C64]">
-                Explore category
-              </button>
+              <Link to="/products">
+                <button className="btn mt-3 bg-[#0B2D4B] text-white hover:bg-[#103C64]">
+                  Explore category
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -64,9 +65,11 @@ export default function OnDemand() {
               <h3 className="text-2xl font-semibold text-gray-900">
                 Florence <br /> <span className="font-bold">compact</span>
               </h3>
-              <button className="btn mt-3 bg-[#0B2D4B] text-white hover:bg-[#103C64]">
-                Explore category
-              </button>
+              <Link to="/products">
+                <button className="btn mt-3 bg-[#0B2D4B] text-white hover:bg-[#103C64]">
+                  Explore category
+                </button>
+              </Link>
             </div>
           </div>
         </div>

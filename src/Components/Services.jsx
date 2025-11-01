@@ -109,7 +109,7 @@ export default function Services() {
       <div className="w-full bg-[#e5edf3] py-20 md:py-30 min-h-[30vh] mb-16">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center">
           <div className="text-center">
-            <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
+            <h1 className="text-5xl font-extrabold text-gray-900 mb-4 pt-7">
               Our Design Services
             </h1>
             {/* Breadcrumb Navigation */}
@@ -134,7 +134,7 @@ export default function Services() {
           className="mb-20 lg:mb-28"
         >
           <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">
+            <p className="text-sm font-semibold  uppercase tracking-wider mb-2">
               YOUR DECOR PARTNER
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">

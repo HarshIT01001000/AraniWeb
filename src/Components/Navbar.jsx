@@ -31,7 +31,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex lg:text-2xl items-center gap-8 font-medium">
+          <ul className="hidden md:flex lg:text-xl xl:text-2xl items-center gap-8 font-medium">
             <li>
               <Link to="/" className={getLinkClass("/")}>Home</Link>
             </li>
@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="hidden md:flex lg:text-2xl items-center gap-6 text-[#0B2D4B]">
+        <div className="hidden md:flex lg:text-xl xl:text-2xl items-center gap-6 text-[#0B2D4B]">
           <FiSearch className="text-xl cursor-pointer" />
           <p className="font-semibold cursor-pointer">My account</p>
         </div>

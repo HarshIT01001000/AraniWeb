@@ -34,7 +34,7 @@ const products = [
 
 const CrousalPage = () => {
   return (
-    <section className="w-full h-[600px] flex flex-col md:flex-row mt-15">
+    <section className="w-full h-[600px] flex flex-col md:flex-row mt-15 ">
       {/* LEFT SIDE - Hero Section with Background Image */}
       <div
         className="w-full md:w-[70%] flex flex-col justify-center items-start px-10 py-16 bg-cover bg-center bg-no-repeat relative"

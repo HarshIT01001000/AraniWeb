@@ -88,7 +88,7 @@ export default function Home() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 2 }} // comes after image & circle
         >
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-[#0B2D4B] leading-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-6xl xl:text-8xl font-bold text-[#0B2D4B] leading-tight">
             {hero.heading}
           </h1>
           <p className="text-gray-600 text-lg">{hero.subtext}</p>

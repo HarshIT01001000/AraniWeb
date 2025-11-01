@@ -115,7 +115,7 @@ export default function ProductSec() {
         
         {/* Optional Section Header (Added for context, can be removed if only the grid is needed) */}
         <div className="mb-12 text-center">
-          <h2 className="text-3xl sm:text-4xl font-light tracking-tight text-gray-900">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
             Latest in Decor & Design
           </h2>
           <p className="mt-3 text-lg text-gray-500 max-w-2xl mx-auto">
