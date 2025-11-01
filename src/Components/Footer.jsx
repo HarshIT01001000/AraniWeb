@@ -115,17 +115,15 @@ export default function Footer() {
               <h1 className="text-2xl font-semibold">decshop</h1>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Lorem ipsum amet adipiscing elit to eiusmod ad tempor.
+              Transforming Spaces That Inspire
             </p>
 
-            {/* Social Icons: FaDribbble replaced by a simple circle placeholder */}
-            <div className="flex items-center gap-4 text-xl text-white mt-3 opacity-80">
-              <FacebookIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
-              {/* Placeholder for the generic circular icon in the image */}
-              <div className="w-5 h-5 border-2 border-gray-400 rounded-full hover:border-white transition-colors cursor-pointer flex items-center justify-center text-xs"></div>
-              <TwitterIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
-              <InstagramIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
-            </div>
+              {/* Social Icons: FaDribbble replaced by a simple circle placeholder */}
+              <div className="flex items-center gap-4 text-xl text-white mt-3 opacity-80">
+                {/* Placeholder for the generic circular icon in the image */}
+                <div className="w-5 h-5 border-2 border-gray-400 rounded-full hover:border-white transition-colors cursor-pointer flex items-center justify-center text-xs"></div>
+                <InstagramIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
+              </div>
           </div>
 
           {/* Categories */}
@@ -145,8 +143,8 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li className="hover:text-white cursor-pointer">About us</li>
               <li className="hover:text-white cursor-pointer">Contact us</li>
-              <li className="hover:text-white cursor-pointer">FAQs</li>
-              <li className="hover:text-white cursor-pointer">Payment</li>
+              <li className="hover:text-white cursor-pointer">Design</li>
+              <li className="hover:text-white cursor-pointer">Services</li>
             </ul>
           </div>
 
@@ -207,8 +205,8 @@ export default function Footer() {
           <p className="order-2 md:order-1">© 2025 Crafto — Powered by <span className="text-white">ThemeZaa</span></p>
           
           <div className="flex gap-8 order-1 md:order-2">
-            <p>Need support? <span className="font-semibold text-white">+1 234 567 8910</span></p>
-            <p>Customer care: <span className="font-semibold text-white">info@domain.com</span></p>
+            <p>Need support? <span className="font-semibold text-white">+91 8108108851 | +91 9892755754</span></p>
+            <p>Customer care: <span className="font-semibold text-white">arniinfrasolutions@gmail.com</span></p>
           </div>
         </div>
       </div>
