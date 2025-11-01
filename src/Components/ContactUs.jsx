@@ -162,8 +162,9 @@ export default function ContactUs() {
                 <MapPinIcon className="w-6 h-6" />
                 <h3 className="font-semibold text-lg">Office location</h3>
               </div>
-              <p className="text-gray-600 text-sm">16122 Collins street,</p>
-              <p className="text-gray-600 text-sm">Melbourne, Australia</p>
+              <p className="text-gray-600 text-sm">Globe Business Square, Unit No. 229,</p>
+              <p className="text-gray-600 text-sm">Plot No. C8/2, MIDC Phase 1, Dombivli East,</p>
+              <p className="text-gray-600 text-sm">Maharashtra – 421203</p>
             </div>
 
             {/* Send a message */}
@@ -176,13 +177,13 @@ export default function ContactUs() {
                 href="mailto:info@yourdomain.com"
                 className="text-blue-600 hover:underline text-sm"
               >
-                info@yourdomain.com
+                arniinfrasolutions@gmail.com
               </a>
               <a
                 href="mailto:sales@yourdomain.com"
                 className="text-blue-600 hover:underline text-sm"
               >
-                sales@yourdomain.com
+                arniinfrasolutions@gmail.com
               </a>
             </div>
 
@@ -196,13 +197,13 @@ export default function ContactUs() {
                 href="tel:1-800-222-000"
                 className="text-blue-600 hover:underline text-sm"
               >
-                1-800-222-000
+                +91 8108108851
               </a>
               <a
                 href="tel:1-800-222-000"
                 className="text-blue-600 hover:underline text-sm"
               >
-                1-800-222-000
+                +91 9892755754
               </a>{" "}
               {/* Assuming it's the same number based on image */}
             </div>
@@ -210,20 +211,20 @@ export default function ContactUs() {
             <div className="flex flex-col items-start gap-3 border-b-2 border-gray-200 pb-6">
               <div className="flex items-center gap-3 text-gray-700">
                 <MailIcon className="w-6 h-6" />
-                <h3 className="font-semibold text-lg">Send a message</h3>
+                <h3 className="font-semibold text-lg">Business Hours</h3>
               </div>
-              <a
+              <p
                 href="mailto:info@yourdomain.com"
-                className="text-blue-600 hover:underline text-sm"
+                className="hover:underline text-sm"
               >
-                info@yourdomain.com
-              </a>
-              <a
+                Monday – Saturday: 10:00 AM – 7:00 PM
+              </p>
+              <p
                 href="mailto:sales@yourdomain.com"
-                className="text-blue-600 hover:underline text-sm"
+                className="hover:underline text-sm"
               >
-                sales@yourdomain.com
-              </a>
+                Sunday: Closed
+              </p>
             </div>
           </div>
         </div>

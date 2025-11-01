@@ -39,7 +39,7 @@ export default function Navbar() {
               <Link to="/about" className={getLinkClass("/about")}>About us</Link>
             </li>
             <li>
-              <Link to="/products" className={getLinkClass("/products")}>Products</Link>
+              <Link to="/products" className={getLinkClass("/products")}>Design</Link>
             </li>
             <li>
               <Link to="/service" className={getLinkClass("/service")}>Services</Link>

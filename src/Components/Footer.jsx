@@ -66,8 +66,8 @@ export default function Footer() {
     <div className="flex flex-col items-center justify-center py-6 gap-3">
       <TruckIcon className="text-gray-800 text-3xl" />
       <div>
-        <p className="font-semibold text-lg text-gray-800">Free shipping</p>
-        <p className="text-gray-600 text-sm">Free return & exchange</p>
+        <p className="font-semibold text-lg text-gray-800">On-Time Delivery</p>
+        <p className="text-gray-600 text-sm">Committed project timelines</p>
       </div>
     </div>
 
@@ -75,8 +75,8 @@ export default function Footer() {
     <div className="flex flex-col items-center justify-center py-6 gap-3">
       <MapPinIcon className="text-gray-800 text-3xl" />
       <div>
-        <p className="font-semibold text-lg text-gray-800">Store locator</p>
-        <p className="text-gray-600 text-sm">Find nearest store</p>
+        <p className="font-semibold text-lg text-gray-800">Turnkey Solutions</p>
+        <p className="text-gray-600 text-sm">End-to-end design & build execution</p>
       </div>
     </div>
 
@@ -84,8 +84,8 @@ export default function Footer() {
     <div className="flex flex-col items-center justify-center py-6 gap-3">
       <ShieldIcon className="text-gray-800 text-3xl" />
       <div>
-        <p className="font-semibold text-lg text-gray-800">Secure payment</p>
-        <p className="text-gray-600 text-sm">100% secure method</p>
+        <p className="font-semibold text-lg text-gray-800">Quality Materials</p>
+        <p className="text-gray-600 text-sm">Branded, certified & durable finishes</p>
       </div>
     </div>
 
@@ -93,8 +93,8 @@ export default function Footer() {
     <div className="flex flex-col items-center justify-center py-6 gap-3">
       <HeadphonesIcon className="text-gray-800 text-3xl" />
       <div>
-        <p className="font-semibold text-lg text-gray-800">Online support</p>
-        <p className="text-gray-600 text-sm">24/7 support center</p>
+        <p className="font-semibold text-lg text-gray-800">Client Support</p>
+        <p className="text-gray-600 text-sm">Transparent communication, always</p>
       </div>
     </div>
 

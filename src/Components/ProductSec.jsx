@@ -97,7 +97,7 @@ export default function ProductSec() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
-              Products
+              Designs
             </h1>{" "}
             {/* Changed title to match image */}
             {/* Breadcrumb Navigation */}
@@ -106,7 +106,7 @@ export default function ProductSec() {
                 Home
               </p>
               <p className="text-gray-300 pointer-events-none">|</p>
-              <p className="text-gray-900">Products</p>
+              <p className="text-gray-900">Designs</p>
             </div>
           </div>
         </div>

@@ -165,7 +165,7 @@ export default function ProductsForHomePage() {
             DESIGNERS IDEAS
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-800">
-            Products
+            Project Gallery 
           </h2>
         </motion.div>
 
