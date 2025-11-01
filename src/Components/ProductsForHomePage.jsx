@@ -61,10 +61,10 @@ const productData = [
 ];
 
 const brandNames = [
-  "Pay With Multiple Credit Card",
-  "Get Offer Upto %50 On Credit Card",
-  "Get Offer Upto %50 On Credit Card.",
-  "Get Offer Upto %50 On Credit Card",
+"Design your dream workspace effortlessly.",
+"Modular furniture for every space.",
+"End-to-end turnkey project solutions."  
+
 ];
 
 // --- Marquee Component (Framer Motion) ---

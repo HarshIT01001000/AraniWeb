@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaRegCalendarAlt } from 'react-icons/fa'; // Used for the date icon
 
 // --- Data ---
-const brandNames = ['Medium', 'pepperfry', 'ARTICLE.', 'Instagram', 'Medium', 'pepperfry', 'ARTICLE.', 'Instagram'];
+const brandNames = ['Turnkey', 'Modular', 'Office', 'Residential', 'Fit-Out', 'Finishes', 'Branding', 'MEP'];
 // The array is duplicated to ensure a seamless, gapless loop in the marquee.
 
 const articles = [

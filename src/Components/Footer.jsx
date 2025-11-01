@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 // Note: Removed external icon imports (FaFacebookF, FiTruck, etc.)
 // and replaced them with inline SVG definitions to resolve compilation errors.
@@ -121,7 +124,7 @@ export default function Footer() {
               {/* Social Icons: FaDribbble replaced by a simple circle placeholder */}
               <div className="flex items-center gap-4 text-xl text-white mt-3 opacity-80">
                 {/* Placeholder for the generic circular icon in the image */}
-                <div className="w-5 h-5 border-2 border-gray-400 rounded-full hover:border-white transition-colors cursor-pointer flex items-center justify-center text-xs"></div>
+                <FaWhatsapp className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
                 <InstagramIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
               </div>
           </div>
@@ -130,10 +133,10 @@ export default function Footer() {
           <div >
             <h3 className="font-semibold mb-4 text-lg">Categories</h3>
             <ul className="space-y-2 text-gray-300">
-              <li className="hover:text-white cursor-pointer">Bed room</li>
-              <li className="hover:text-white cursor-pointer">Living room</li>
-              <li className="hover:text-white cursor-pointer">Lightning</li>
-              <li className="hover:text-white cursor-pointer">Fabrics sofa</li>
+              <li className="hover:text-white cursor-pointer">Living Room Furniture</li>
+              <li className="hover:text-white cursor-pointer">Bedroom Collections</li>
+              <li className="hover:text-white cursor-pointer">Office & Workspaces</li>
+              <li className="hover:text-white cursor-pointer">Decor & Lighting</li>
             </ul>
           </div>
 
@@ -141,51 +144,26 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-lg">Information</h3>
             <ul className="space-y-2 text-gray-300">
-              <li className="hover:text-white cursor-pointer">About us</li>
-              <li className="hover:text-white cursor-pointer">Contact us</li>
-              <li className="hover:text-white cursor-pointer">Design</li>
-              <li className="hover:text-white cursor-pointer">Services</li>
+              <li className="hover:text-white cursor-pointer"><Link to="/about">About us</Link></li>
+             <li className="hover:text-white cursor-pointer"> <Link to="/contact">Contact us</Link></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/products">Design</Link></li>
+              <li className="hover:text-white cursor-pointer"><Link to="/service">Services</Link></li>
             </ul>
           </div>
 
-          {/* Account */}
-          <div>
-            <h3 className="font-semibold mb-4 text-lg">Account</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li className="hover:text-white cursor-pointer">My account</li>
-              <li className="hover:text-white cursor-pointer">Orders</li>
-              <li className="hover:text-white cursor-pointer">Checkout</li>
-              <li className="hover:text-white cursor-pointer">My wishlists</li>
-            </ul>
-          </div>
+
 
           {/* Newsletter */}
           <div>
             <h3 className="font-semibold mb-4 text-lg">Newsletter</h3>
             <p className="text-gray-300 text-sm mb-4">Get everything you need succeed!</p>
 
-            {/* Input/Button: Removed rounded corners and added a proper send icon */}
-            <div className="flex items-center border border-gray-600 overflow-hidden">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-transparent px-3 py-3 w-full outline-none text-sm text-gray-300"
-              />
-              <button className="px-4 py-3 bg-white text-[#141921] font-bold h-full flex items-center justify-center">
-                {/* Send Icon (Inline SVG) */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-send">
-                  <path d="m22 2-7 20-4-9-9-4 20-7z"></path>
-                  <path d="M22 2 11 13"></path>
-                </svg>
-              </button>
-            </div>
 
             {/* Payment Logos: Updated with alt text and a fourth logo for layout match */}
-            <div className="flex gap-2 items-center mt-6 opacity-90 md:ml-[-6rem] lg:ml-0">
+            <div className="flex gap-2 items-center mt-6 opacity-90 ">
               <img alt="Visa" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" className="h-6" />
               <img alt="PayPal" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" className="h-6" />
               {/* Klarna is often grayscale/monochrome in dark footers */}
-              <img alt="Klarna" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Klarna_Logo_black.svg" className="h-6 filter brightness-150" />
               <img alt="Mastercard" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" className="h-6" />
             </div>
           </div>
@@ -194,15 +172,13 @@ export default function Footer() {
         {/* New Section: ReCAPTCHA Notice */}
         <div className="max-w-7xl mx-auto px-6 mt-14 py-6 text-gray-400 text-sm border-t border-gray-700">
           <p>
-            This site is protected by reCAPTCHA and the Google
-            <a href="#" className="text-white hover:underline ml-1">privacy policy</a>
-            and terms of service apply.
+
           </p>
         </div>
 
         {/* Bottom Bar: Copyright and Contact Info */}
         <div className="max-w-7xl mx-auto px-6 py-6 text-gray-400 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="order-2 md:order-1">© 2025 Crafto — Powered by <span className="text-white">ThemeZaa</span></p>
+          <p className="order-2 md:order-1">© 2025 Arani Infra Solution </p>
           
           <div className="flex gap-8 order-1 md:order-2">
             <p>Need support? <span className="font-semibold text-white">+91 8108108851 | +91 9892755754</span></p>

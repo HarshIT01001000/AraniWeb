@@ -182,8 +182,8 @@ export default function AboutUs() {
         {/* --- NEW SECTION: Milestones and Social Proof --- */}
 
         {/* Vis-Mis Section */}
-        <div className="pt-8 pb-16 lg:pt-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-8 lg:gap-16">
+        <div className=" pb-20">
+          <div className="flex md:flex md:flex-row md:space-y-0 space-y-4 flex-col">
             {/* Vision */}
             <div className="text-center sm:text-left">
               <p className="text-7xl lg:text-8xl font-extrabold text-gray-100 mb-6 tracking-widest">

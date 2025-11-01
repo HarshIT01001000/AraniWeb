@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const heroData = [
@@ -92,10 +93,11 @@ export default function Home() {
             {hero.heading}
           </h1>
           <p className="text-gray-600 text-lg">{hero.subtext}</p>
-          <button className="bg-[#0B2D4B] text-white px-8 py-3 flex items-center gap-2 rounded-full hover:bg-[#0a233b] transition-all mx-auto md:mx-0">
+          <Link to='/products'>
+                    <button className="bg-[#0B2D4B] text-white px-8 py-3 flex items-center gap-2 rounded-full hover:bg-[#0a233b] transition-all mx-auto md:mx-0">
             <HiOutlineShoppingBag className="text-xl" />
-            SHOP NOW
-          </button>
+            Explore
+          </button></Link>
         </motion.div>
 
         {/* Right Image with AnimatePresence */}

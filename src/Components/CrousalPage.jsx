@@ -4,6 +4,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -53,9 +54,11 @@ const CrousalPage = () => {
           <h1 className="text-5xl font-bold text-white mb-6">
             Lounge <span className="text-gray-200">Collection</span>
           </h1>
+          <Link to="/products">
           <button className="bg-white text-gray-900 px-6 py-3 rounded-md hover:bg-gray-200 transition">
             Explore Category
           </button>
+          </Link>
         </div>
       </div>
 
