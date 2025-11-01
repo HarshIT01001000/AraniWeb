@@ -64,6 +64,7 @@ const productData = [
 const ProductCard = ({ data }) => {
   return (
     <div className="group cursor-pointer">
+      
       {/* Image Container */}
       <div className="mb-4 overflow-hidden rounded-lg">
         <img
@@ -92,6 +93,24 @@ const ProductCard = ({ data }) => {
 export default function ProductSec() {
   return (
     <div className="w-full bg-white font-sans">
+      <div className="w-full bg-[#e5edf3] py-30 min-h-[30vh]">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
+              Products
+            </h1>{" "}
+            {/* Changed title to match image */}
+            {/* Breadcrumb Navigation */}
+            <div className="flex justify-center items-center gap-2 text-sm font-semibold text-gray-500">
+              <p className="hover:text-gray-700 cursor-pointer transition-colors">
+                Home
+              </p>
+              <p className="text-gray-300 pointer-events-none">|</p>
+              <p className="text-gray-900">Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         
         {/* Optional Section Header (Added for context, can be removed if only the grid is needed) */}
@@ -111,13 +130,7 @@ export default function ProductSec() {
           ))}
         </div>
 
-        {/* Optional Call to Action / View More Button */}
-        <div className="mt-16 flex justify-center">
-          <button className="flex items-center space-x-2 text-sm font-semibold text-gray-700 hover:text-gray-900 transition duration-150 border-b border-gray-300 pb-1">
-            <span>View all products</span>
-            <ChevronRight className="w-4 h-4" />
-          </button>
-        </div>
+
 
       </div>
     </div>

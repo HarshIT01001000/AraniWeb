@@ -3,12 +3,20 @@ import { FiSearch } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // ✅ get current route
+
+  // helper function for active link
+  const getLinkClass = (path) =>
+    location.pathname === path
+      ? "text-[#0B2D4B] font-bold"
+      : "text-gray-700 hover:text-[#0B2D4B]";
 
   return (
-    <nav className="w-full z-30 absolute top-0 left-0 md:bg-transparent  pt-4 bg-white">
+    <nav className="w-full z-30 absolute top-0 left-0 md:bg-transparent pt-4 bg-white">
       <div className="max-w-8xl mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
 
         {/* LEFT SECTION */}
@@ -23,12 +31,22 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex lg:text-2xl items-center gap-8 text-gray-700 font-medium">
-           <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">About us</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Products</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Services</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Contact us</li>
+          <ul className="hidden md:flex lg:text-2xl items-center gap-8 font-medium">
+            <li>
+              <Link to="/" className={getLinkClass("/")}>Home</Link>
+            </li>
+            <li>
+              <Link to="/about" className={getLinkClass("/about")}>About us</Link>
+            </li>
+            <li>
+              <Link to="/products" className={getLinkClass("/products")}>Products</Link>
+            </li>
+            <li>
+              <Link to="/service" className={getLinkClass("/service")}>Services</Link>
+            </li>
+            <li>
+              <Link to="/contact" className={getLinkClass("/contact")}>Contact us</Link>
+            </li>
           </ul>
         </div>
 
@@ -53,12 +71,22 @@ export default function Navbar() {
           isOpen ? "max-h-96 py-4" : "max-h-0 py-0"
         }`}
       >
-        <ul className="flex flex-col gap-4 px-6 text-gray-700 font-medium">
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Home</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">About us</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Products</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Services</li>
-          <li className="hover:text-[#0B2D4B] cursor-pointer">Contact us</li>
+        <ul className="flex flex-col gap-4 px-6 text-lg font-medium">
+          <li>
+            <Link to="/" onClick={() => setIsOpen(false)} className={getLinkClass("/")}>Home</Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setIsOpen(false)} className={getLinkClass("/about")}>About us</Link>
+          </li>
+          <li>
+            <Link to="/products" onClick={() => setIsOpen(false)} className={getLinkClass("/products")}>Products</Link>
+          </li>
+          <li>
+            <Link to="/service" onClick={() => setIsOpen(false)} className={getLinkClass("/service")}>Services</Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsOpen(false)} className={getLinkClass("/contact")}>Contact us</Link>
+          </li>
         </ul>
       </div>
     </nav>

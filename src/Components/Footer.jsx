@@ -58,47 +58,49 @@ export default function Footer() {
     <footer className="w-full text-white">
 
       {/* Top Info Row - White Background */}
-      <div className="w-full bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4">
-
-          {/* Item 1: Free shipping */}
-          <div className="flex items-center justify-center md:justify-start gap-3 py-6 border-gray-300 md:border-r">
-            <TruckIcon className="text-gray-800 text-3xl" />
-            <div>
-              <p className="font-semibold text-lg text-gray-800">Free shipping</p>
-              <p className="text-gray-600 text-sm">Free return & exchange</p>
-            </div>
-          </div>
-
-          {/* Item 2: Store locator */}
-          <div className="flex items-center justify-center md:justify-start gap-3 py-6 border-gray-300 md:border-r">
-            <MapPinIcon className="text-gray-800 text-3xl" />
-            <div>
-              <p className="font-semibold text-lg text-gray-800">Store locator</p>
-              <p className="text-gray-600 text-sm">Find nearest store</p>
-            </div>
-          </div>
-
-          {/* Item 3: Secure payment */}
-          <div className="flex items-center justify-center md:justify-start gap-3 py-6 border-gray-300 md:border-r">
-            <ShieldIcon className="text-gray-800 text-3xl" />
-            <div>
-              <p className="font-semibold text-lg text-gray-800">Secure payment</p>
-              <p className="text-gray-600 text-sm">100% secure method</p>
-            </div>
-          </div>
-
-          {/* Item 4: Online support */}
-          <div className="flex items-center justify-center md:justify-start gap-3 py-6">
-            <HeadphonesIcon className="text-gray-800 text-3xl" />
-            <div>
-              <p className="font-semibold text-lg text-gray-800">Online support</p>
-              <p className="text-gray-600 text-sm">24/7 support center</p>
-            </div>
-          </div>
-
-        </div>
+     {/* Top Info Row - White Background */}
+<div className="w-full bg-white border-t border-gray-200">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+    
+    {/* Item 1 */}
+    <div className="flex flex-col items-center justify-center py-6 gap-3">
+      <TruckIcon className="text-gray-800 text-3xl" />
+      <div>
+        <p className="font-semibold text-lg text-gray-800">Free shipping</p>
+        <p className="text-gray-600 text-sm">Free return & exchange</p>
       </div>
+    </div>
+
+    {/* Item 2 */}
+    <div className="flex flex-col items-center justify-center py-6 gap-3">
+      <MapPinIcon className="text-gray-800 text-3xl" />
+      <div>
+        <p className="font-semibold text-lg text-gray-800">Store locator</p>
+        <p className="text-gray-600 text-sm">Find nearest store</p>
+      </div>
+    </div>
+
+    {/* Item 3 */}
+    <div className="flex flex-col items-center justify-center py-6 gap-3">
+      <ShieldIcon className="text-gray-800 text-3xl" />
+      <div>
+        <p className="font-semibold text-lg text-gray-800">Secure payment</p>
+        <p className="text-gray-600 text-sm">100% secure method</p>
+      </div>
+    </div>
+
+    {/* Item 4 */}
+    <div className="flex flex-col items-center justify-center py-6 gap-3">
+      <HeadphonesIcon className="text-gray-800 text-3xl" />
+      <div>
+        <p className="font-semibold text-lg text-gray-800">Online support</p>
+        <p className="text-gray-600 text-sm">24/7 support center</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
       {/* Main Footer Content - Dark Charcoal Background */}
       <div className="bg-[#141921] pt-16">
@@ -127,7 +129,7 @@ export default function Footer() {
           </div>
 
           {/* Categories */}
-          <div>
+          <div >
             <h3 className="font-semibold mb-4 text-lg">Categories</h3>
             <ul className="space-y-2 text-gray-300">
               <li className="hover:text-white cursor-pointer">Bed room</li>
@@ -181,7 +183,7 @@ export default function Footer() {
             </div>
 
             {/* Payment Logos: Updated with alt text and a fourth logo for layout match */}
-            <div className="flex gap-4 items-center mt-6 opacity-90">
+            <div className="flex gap-2 items-center mt-6 opacity-90 md:ml-[-6rem] lg:ml-0">
               <img alt="Visa" src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" className="h-6" />
               <img alt="PayPal" src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" className="h-6" />
               {/* Klarna is often grayscale/monochrome in dark footers */}

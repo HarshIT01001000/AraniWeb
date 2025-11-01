@@ -132,9 +132,9 @@ const MessageOutlineIcon = (props) => (
 
 export default function ContactUs() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full  md:mb-[-9rem] min-h-screen">
       {/* Hero Section (from previous iteration) */}
-      <div className="w-full bg-[#e5edf3] py-20 min-h-[30vh]">
+      <div className="w-full bg-[#e5edf3] py-30 min-h-[30vh]">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-900 mb-4">

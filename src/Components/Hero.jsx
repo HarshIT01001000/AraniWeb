@@ -9,11 +9,11 @@ export default function Home() {
       heading: "Lewis Sofas",
       subtext: "Price starting from $259.00",
       mainImg: "/Sofa1.png",
-      bgColor: "bg-[#E9F8F7]",
-      bgCircleMobile: "bg-[#bed7de]",
-      bgRightMobile: "bg-[#3ba5c2]",
-      bgCircleDesktop: "bg-[#bed7de]",
-      bgRightDesktop: "bg-[#3ba5c2]",
+      bgColor: "bg-[#E5EFF3]",
+      bgCircleMobile: "bg-[#EEF4F7]",
+      bgRightMobile: "bg-[#BBD8EC]",
+      bgCircleDesktop: "bg-[#EEF4F7]",
+      bgRightDesktop: "bg-[#BBD8EC]",
       bottomBoxLeft: "Next",
       bottomBoxRightImg: "/Sofa2.png",
       bottomBoxBg: "bg-orange-200",
@@ -23,12 +23,12 @@ export default function Home() {
       heading: "Modern Sofa",
       subtext: "Starting from $199.00",
       mainImg: "/Sofa2.png",
-      bgColor: "bg-orange-100",
-      bgCircleMobile: "bg-orange-200",
-      bgRightMobile: "bg-orange-300",
-      bgCircleDesktop: "bg-orange-200",
-      bgRightDesktop: "bg-orange-300",
-      bottomBoxLeft: "View Details",
+      bgColor: "bg-[#F9F1EB]",
+      bgCircleMobile: "bg-[#FBF6F2]",
+      bgRightMobile: "bg-[#EEDCCD]",
+      bgCircleDesktop: "bg-[#FBF6F2]",
+      bgRightDesktop: "bg-[#EEDCCD]",
+      bottomBoxLeft: "Next",
       bottomBoxRightImg: "/Sofa1.png",
       bottomBoxBg: "bg-[#E9F8F7]",
     },
@@ -47,17 +47,16 @@ export default function Home() {
     >
       {/* Desktop Half-Circle */}
       <div className="absolute inset-0 flex justify-end items-center">
-       {/* Desktop Half-Circle */}
-<AnimatePresence mode="wait">
-  <motion.div
-    key={`circle-${currentHero}`} // remounts every time hero changes
-    className={`hidden md:block absolute right-[-200px] top-0 h-[900px] w-[800px] lg:w-[1200px] ${hero.bgCircleDesktop} rounded-l-full`}
-    initial={{ x: 300, opacity: 0 }}   // start offscreen to the right
-    animate={{ x: 0, opacity: 1 }}      // slide to position
-    transition={{ duration: 2, ease: "easeOut" }}
-  />
-</AnimatePresence>
-
+        {/* Desktop Half-Circle */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={`circle-${currentHero}`} // remounts every time hero changes
+            className={`hidden md:block absolute right-[-200px] top-0 h-[900px] w-[800px] lg:w-[1200px] ${hero.bgCircleDesktop} rounded-l-full`}
+            initial={{ x: 300, opacity: 0 }} // start offscreen to the right
+            animate={{ x: 0, opacity: 1 }} // slide to position
+            transition={{ duration: 2, ease: "easeOut" }}
+          />
+        </AnimatePresence>
 
         {/* Right Overlay Color */}
         <AnimatePresence mode="wait">
@@ -74,9 +73,9 @@ export default function Home() {
       {/* Mobile stacked backgrounds */}
       <div className="absolute md:hidden inset-0 flex flex-col items-center justify-center mt-20">
         <div
-          className={`w-72 h-72 ${hero.bgCircleMobile} rounded-full mb-6`}
+          className={`w-92 h-92 mt-2 ${hero.bgCircleMobile} rounded-full mb-[-6rem]`}
         ></div>
-        <div className={`w-full h-1/2 ${hero.bgRightMobile}`}></div>
+        <div className={`w-full h-[70%] ${hero.bgRightMobile}`}></div>
       </div>
 
       {/* Content Layer */}
@@ -89,7 +88,7 @@ export default function Home() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 2 }} // comes after image & circle
         >
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-[#0B2D4B] leading-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-[#0B2D4B] leading-tight">
             {hero.heading}
           </h1>
           <p className="text-gray-600 text-lg">{hero.subtext}</p>
@@ -112,7 +111,7 @@ export default function Home() {
             <img
               src={hero.mainImg}
               alt="furniture"
-              className="w-[300px] sm:w-[400px] md:w-[900px] max-w-full relative z-10"
+              className="w-[300px] md:w-[900px] max-w-full "
             />
           </motion.div>
         </AnimatePresence>
@@ -120,7 +119,7 @@ export default function Home() {
 
       {/* Bottom Box */}
       <div
-        className={`absolute bottom-0 md:left-4 ${hero.bottomBoxBg} w-72 h-40 rounded-lg z-10 flex overflow-hidden`}
+        className={`absolute bottom-0 md:left-4 ${hero.bottomBoxBg} md:w-72 md:h-40 w-50 h-30 rounded-lg z-10 flex overflow-hidden`}
       >
         {/* Left Half */}
         <div
