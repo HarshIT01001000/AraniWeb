@@ -123,7 +123,7 @@ export default function Footer() {
               <div className="flex items-center gap-4 text-xl text-white mt-3 opacity-80">
                 {/* Placeholder for the generic circular icon in the image */}
                 <a
-  href="https://wa.me/8108108851"
+  href="https://wa.me/9892755754"
   target="_blank"
   rel="noopener noreferrer"
 ><FaWhatsapp className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" /></a>

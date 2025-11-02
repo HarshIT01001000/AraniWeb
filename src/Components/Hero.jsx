@@ -7,30 +7,30 @@ export default function Home() {
   const heroData = [
     {
       id: 1,
-      heading: "Lewis Sofas",
-      subtext: "Price starting from $259.00",
-      mainImg: "/Sofa1.png",
+      heading: "Azure Muse",
+      subtext: "Blue Velvet",
+      mainImg: "/SOFAH1.webp",
       bgColor: "bg-[#E5EFF3]",
       bgCircleMobile: "bg-[#EEF4F7]",
       bgRightMobile: "bg-[#BBD8EC]",
       bgCircleDesktop: "bg-[#EEF4F7]",
       bgRightDesktop: "bg-[#BBD8EC]",
       bottomBoxLeft: "Next",
-      bottomBoxRightImg: "/Sofa2.png",
+      bottomBoxRightImg: "/SOFAH1.webp",
       bottomBoxBg: "bg-orange-200",
     },
     {
       id: 2,
-      heading: "Modern Sofa",
-      subtext: "Starting from $199.00",
-      mainImg: "/Sofa2.png",
+      heading: "Oslo Loveseat",
+      subtext: "Light Upholstery, Wood Frame",
+      mainImg: "/SOFAH2.webp",
       bgColor: "bg-[#F9F1EB]",
       bgCircleMobile: "bg-[#FBF6F2]",
       bgRightMobile: "bg-[#EEDCCD]",
       bgCircleDesktop: "bg-[#FBF6F2]",
       bgRightDesktop: "bg-[#EEDCCD]",
       bottomBoxLeft: "Next",
-      bottomBoxRightImg: "/Sofa1.png",
+      bottomBoxRightImg: "/SOFAH2.webp",
       bottomBoxBg: "bg-[#E9F8F7]",
     },
   ];
@@ -113,7 +113,7 @@ export default function Home() {
             <img
               src={hero.mainImg}
               alt="furniture"
-              className="w-[300px] md:w-[900px] max-w-full "
+              className="w-[300px] md:w-[1500px] max-w-full "
             />
           </motion.div>
         </AnimatePresence>
