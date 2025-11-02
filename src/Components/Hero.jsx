@@ -16,21 +16,21 @@ export default function Home() {
       bgCircleDesktop: "bg-[#EEF4F7]",
       bgRightDesktop: "bg-[#BBD8EC]",
       bottomBoxLeft: "Next",
-      bottomBoxRightImg: "/SOFAH1.webp",
+      bottomBoxRightImg: "/SOFAH2.png",
       bottomBoxBg: "bg-orange-200",
     },
     {
       id: 2,
       heading: "Oslo Loveseat",
       subtext: "Light Upholstery, Wood Frame",
-      mainImg: "/SOFAH2.webp",
+      mainImg: "/SOFAH2.png",
       bgColor: "bg-[#F9F1EB]",
       bgCircleMobile: "bg-[#FBF6F2]",
       bgRightMobile: "bg-[#EEDCCD]",
       bgCircleDesktop: "bg-[#FBF6F2]",
       bgRightDesktop: "bg-[#EEDCCD]",
       bottomBoxLeft: "Next",
-      bottomBoxRightImg: "/SOFAH2.webp",
+      bottomBoxRightImg: "/SOFAH1.webp",
       bottomBoxBg: "bg-[#E9F8F7]",
     },
   ];
@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <section
-      className={`relative w-full md:max-h-screen min-h-screen flex items-center justify-center overflow-hidden ${hero.bgColor}`}
+      className={`relative w-full lg:h-[50rem]  h-[44rem] flex items-center justify-center overflow-hidden ${hero.bgColor}`}
     >
       {/* Desktop Half-Circle */}
       <div className="absolute inset-0 flex justify-end items-center">
@@ -80,16 +80,16 @@ export default function Home() {
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 text-center md:text-left w-full">
+      <div className=" z-10  pt-10 pb-10 flex flex-col md:flex-row items-center justify-evenly px-6 md:px-12 text-center md:text-left w-full">
         {/* Left Text Content */}
         <motion.div
           key={`text-${currentHero}`}
-          className="max-w-lg space-y-6"
+          className="max-w-lg md:space-y-6 space-y-3"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 2 }} // comes after image & circle
         >
-          <h1 className="text-5xl sm:text-6xl md:text-6xl xl:text-8xl font-bold text-[#0B2D4B] leading-tight">
+          <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#0B2D4B] leading-tight">
             {hero.heading}
           </h1>
           <p className="text-gray-600 text-lg">{hero.subtext}</p>
@@ -113,7 +113,7 @@ export default function Home() {
             <img
               src={hero.mainImg}
               alt="furniture"
-              className="w-[300px] md:w-[1500px] max-w-full "
+              className="md:w-[1000px] w-[1200px] pt-12 md:ml-[8rem] ml-[1rem]"
             />
           </motion.div>
         </AnimatePresence>
@@ -136,7 +136,7 @@ export default function Home() {
           <img
             src={hero.bottomBoxRightImg}
             alt="Sofa2"
-            className="h-full w-full object-cover rounded-lg"
+            className=" object-cover rounded-lg"
           />
         </div>
       </div>
