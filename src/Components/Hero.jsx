@@ -7,7 +7,7 @@ export default function Home() {
   const heroData = [
     {
       id: 1,
-      heading: "Azure Muse",
+      heading: "The Azure Muse",
       subtext: "Blue Velvet",
       mainImg: "/SOFAH1.webp",
       bgColor: "bg-[#E5EFF3]",
@@ -21,7 +21,7 @@ export default function Home() {
     },
     {
       id: 2,
-      heading: "Oslo Loveseat",
+      heading: "The Oslo Loveseat",
       subtext: "Light Upholstery, Wood Frame",
       mainImg: "/SOFAH2.png",
       bgColor: "bg-[#F9F1EB]",
