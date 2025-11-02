@@ -19,7 +19,7 @@ export default function OnDemand() {
         {/* Large left image */}
         <div className="relative bg-[#F4F8F7] rounded-xl overflow-hidden group">
           <img
-            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000"
+           src="/onDemand/1.png"
             alt="Wooden classic table"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
@@ -39,7 +39,7 @@ export default function OnDemand() {
         <div className="grid grid-rows-2 gap-6">
           <div className="relative bg-[#FDF7F3] rounded-xl overflow-hidden group">
             <img
-              src="https://media.designcafe.com/wp-content/uploads/2021/08/30175410/art-deco-interior-design-in-a-21st-century-dining-room.jpg"
+             src="/onDemand/2.png"
               alt="Pottery products"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -57,7 +57,7 @@ export default function OnDemand() {
 
           <div className="relative bg-[#F2F4FA] rounded-xl overflow-hidden group">
             <img
-              src="https://media.istockphoto.com/id/1938106570/photo/digitally-generated-domestic-bedroom-interior.jpg?s=612x612&w=0&k=20&c=bC_YWy11iWh0ZtHJIT5ia4v9QELdl94SVqDge9XNZcc="
+              src="/onDemand/3.png"
               alt="Florence compact furniture"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />

@@ -43,19 +43,19 @@ const teamMembers = [
     title: "Founder Member",
     bio: "Jyoti brings thoughtful design sensibility and customer understanding that elevates the brand's interior vision.",
     // Placeholder image with initials and color scheme matching the header
-    image: "https://placehold.co/100x100/e5edf3/0B2D4B?text=JD",
+    image: "/Leaders/1.png",
   },
   {
     name: "Karthik Thevar",
     title: "Founder Member & CMO",
     bio: "Karthik plays a key role in ensuring timely project completion and building lasting client relationships.",
-    image: "https://placehold.co/100x100/e5edf3/0B2D4B?text=KT",
+    image: "/Leaders/2.png",
   },
   {
     name: "Dany D Periyathra",
     title: "Project Director",
     bio: "Dany brings strategic direction, operational excellence, and a deep commitment to customer-centric delivery.",
-    image: "https://placehold.co/100x100/e5edf3/0B2D4B?text=DD",
+    image: "/Leaders/3.png",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function AboutUs() {
                         <img
                             src={member.image}
                             alt={member.name}
-                            className="w-28 h-28 rounded-full object-cover border-4 border-[#e5edf3] mb-4"
+                            className="w-32 h-32 rounded-full object-cover border-4 border-[#e5edf3] mb-4"
                             // Fallback to text initials if image fails
                             onError={(e) => { e.target.onerror = null; e.target.src=`https://placehold.co/100x100/e5edf3/0B2D4B?text=${member.name.split(' ').map(n=>n[0]).join('')}` }}
                         />

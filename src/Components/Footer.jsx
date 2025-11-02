@@ -113,9 +113,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             {/* Logo: Simplified font-weight to match image */}
             <div className="flex items-center gap-2">
-              <div className="h-6 w-1.5 bg-white rounded"></div>
-              <div className="h-6 w-1.5 bg-white rounded"></div>
-              <h1 className="text-2xl font-semibold">decshop</h1>
+              <img src="/Logo.png" alt="Arani Logo" className="lg:w-30 w-25  object-contain" />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Transforming Spaces That Inspire
@@ -124,8 +122,12 @@ export default function Footer() {
               {/* Social Icons: FaDribbble replaced by a simple circle placeholder */}
               <div className="flex items-center gap-4 text-xl text-white mt-3 opacity-80">
                 {/* Placeholder for the generic circular icon in the image */}
-                <FaWhatsapp className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
-                <InstagramIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" />
+                <a
+  href="https://wa.me/8108108851"
+  target="_blank"
+  rel="noopener noreferrer"
+><FaWhatsapp className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" /></a>
+                <Link to="https://www.instagram.com/arni_infra?igsh=ZzMzMDVvcmF0eXRl"><InstagramIcon className="w-5 h-5 hover:text-white cursor-pointer hover:opacity-100" /></Link> 
               </div>
           </div>
 

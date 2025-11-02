@@ -8,7 +8,7 @@ const productData = [
     category: 'DECOR',
     date: '12 APRIL 2024',
     title: 'The best influencers to follow for sartorial inspiration',
-    imageUrl: 'https://placehold.co/400x400/F4F4F4/333333?text=Plant+in+Pot',
+    imageUrl: '/10Images/1.JPG',
   },
   {
     id: 2,

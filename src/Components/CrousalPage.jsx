@@ -41,7 +41,7 @@ const CrousalPage = () => {
         className="w-full md:w-[70%] flex flex-col justify-center items-start px-10 py-16 bg-cover bg-center bg-no-repeat relative"
         style={{
           backgroundImage:
-            "url('https://tse2.mm.bing.net/th/id/OIP.TTkFDsn4_-qVqCi90qNHbwHaEP?pid=Api&P=0&h=180')",
+            "url('/10Imgs/4.JPG')",
         }}
       >
         {/* Optional dark overlay for text readability */}

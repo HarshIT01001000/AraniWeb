@@ -22,12 +22,8 @@ export default function Navbar() {
         {/* LEFT SECTION */}
         <div className="flex items-center gap-10">
           {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer">
-            <div className="h-6 w-1.5 bg-[#0B2D4B] rounded"></div>
-            <div className="h-6 w-1.5 bg-[#0B2D4B] rounded"></div>
-            <h1 className="text-2xl font-semibold text-[#0B2D4B]">
-              dec<span className="font-light">shop</span>
-            </h1>
+          <div className="flex items-center  cursor-pointer">
+             <img src="/Logo.png" alt="Arani Logo" className="lg:w-30 w-25  object-contain" />
           </div>
 
           {/* Desktop Menu */}
