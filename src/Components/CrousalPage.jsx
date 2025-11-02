@@ -12,24 +12,18 @@ const products = [
     name: "Wooden Cabinet",
     image:
       "https://tse1.mm.bing.net/th/id/OIP.uTI5N9FG2156DsNy5J3AwQAAAA?pid=Api&P=0&h=180",
-    oldPrice: "$50.00",
-    price: "$23.00",
   },
   {
     id: 2,
     name: "Modern Chair",
     image:
       "https://tse2.mm.bing.net/th/id/OIP.gN4-ayDYrJwhu70RkRf6GQHaE0?pid=Api&P=0&h=180",
-    oldPrice: "$60.00",
-    price: "$30.00",
   },
   {
     id: 3,
     name: "Stylish Lamp",
     image:
       "https://tse1.mm.bing.net/th/id/OIP.CFQwPzKNxjRqSVeKgJzfFAHaHa?pid=Api&P=0&h=180",
-    oldPrice: "$40.00",
-    price: "$20.00",
   },
 ];
 
