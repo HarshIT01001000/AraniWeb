@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <section
-      className={`relative w-full lg:h-[50rem]  h-[44rem] flex items-center justify-center overflow-hidden ${hero.bgColor}`}
+      className={`relative w-full lg:h-[50rem]  h-[50rem] flex items-center justify-center overflow-hidden ${hero.bgColor}`}
     >
       {/* Desktop Half-Circle */}
       <div className="absolute inset-0 flex justify-end items-center">
@@ -80,7 +80,7 @@ export default function Home() {
       </div>
 
       {/* Content Layer */}
-      <div className=" z-10  pt-10 pb-10 flex flex-col md:flex-row items-center justify-evenly px-6 md:px-12 text-center md:text-left w-full">
+      <div className=" z-10  pt-19 pb-10 flex flex-col md:flex-row items-center justify-evenly px-6 md:px-12 text-center md:text-left w-full">
         {/* Left Text Content */}
         <motion.div
           key={`text-${currentHero}`}
@@ -113,7 +113,7 @@ export default function Home() {
             <img
               src={hero.mainImg}
               alt="furniture"
-              className="md:w-[1000px] w-[1200px] pt-12 md:ml-[8rem] ml-[1rem]"
+              className="md:w-[1000px]  pt-10 md:ml-[8rem] ml-[1rem]"
             />
           </motion.div>
         </AnimatePresence>
