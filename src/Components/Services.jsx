@@ -110,7 +110,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center">
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-900 mb-4 pt-7">
-              Our Design Services
+              Our Core Services
             </h1>
             {/* Breadcrumb Navigation */}
             <div className="flex justify-center items-center gap-2 text-sm font-semibold text-gray-500">
