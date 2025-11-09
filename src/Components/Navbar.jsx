@@ -62,9 +62,34 @@ export default function Navbar() {
 
         {/* RIGHT SECTION */}
         <div className="hidden md:flex lg:text-xl xl:text-2xl items-center gap-6 text-[#0B2D4B]">
-          <p className="font-semibold cursor-pointer hover:text-green-600 transition">
-            Call us
-          </p>
+          <div className="relative group">
+            <p className="font-semibold cursor-pointer hover:text-green-600 transition">
+              Call us
+            </p>
+
+            {/* Dropdown with numbers */}
+            <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+              <p
+                className="text-sm text-gray-700 hover:text-green-600 cursor-pointer"
+                onClick={() => {
+                  navigator.clipboard.writeText("9892755754");
+                  alert("Copied: 9892755754");
+                }}
+              >
+                📞 9892755754
+              </p>
+              <p
+                className="text-sm text-gray-700 hover:text-green-600 cursor-pointer mt-2"
+                onClick={() => {
+                  navigator.clipboard.writeText("9821155754");
+                  alert("Copied: 9821155754");
+                }}
+              >
+                📞 9821155754a
+              </p>
+            </div>
+          </div>
+
           <a
             href="https://wa.me/9892755754"
             target="_blank"
@@ -124,7 +149,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className={getLinkClass("/service")}
             >
-              Services
+             Core Services
             </Link>
           </li>
           <li>

@@ -132,13 +132,13 @@ const DecorArticle = () => {
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
                 />
               </figure>
-              <div className="card-body p-0 pt-4">
+              <div className="card-body p-0 pt-4 ">
                 <div className="flex items-center text-xs text-gray-500 mb-1">
-                  <span className="font-bold text-gray-800 uppercase text-xs tracking-wider mr-3 pl-2">{article.category}</span>
+                  <span className="font-bold text-gray-500 uppercase text-xs tracking-wider mr-3 pl-2">{article.category}</span>
                   <FaRegCalendarAlt className="mr-1 text-gray-400 " />
                   <span className='text-gray-500 '>{article.date}</span>
                 </div>
-                <h3 className="text-lg font-semibold pl-2 pb-3 text-gray-800 line-clamp-2 mt-2 leading-snug hover:text-gray-600 transition-colors cursor-pointer">
+                <h3 className="text-lg font-medium pl-2 pb-3 text-gray-300 line-clamp-2 mt-2 leading-snug hover:text-gray-600 transition-colors cursor-pointer">
                   {article.title}
                 </h3>
               </div>
