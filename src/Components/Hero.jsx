@@ -7,30 +7,44 @@ export default function Home() {
   const heroData = [
     {
       id: 1,
-      heading: "The Azure Muse",
-      subtext: "Blue Velvet",
-      mainImg: "/SOFAH1.webp",
+      heading: "Luxury Seating Design",
+      subtext: "Executive Comfort Style",
+      mainImg: "/try1.jpg",
       bgColor: "bg-[#E5EFF3]",
       bgCircleMobile: "bg-[#EEF4F7]",
       bgRightMobile: "bg-[#BBD8EC]",
       bgCircleDesktop: "bg-[#EEF4F7]",
       bgRightDesktop: "bg-[#BBD8EC]",
       bottomBoxLeft: "Next",
-      bottomBoxRightImg: "/SOFAH2.png",
+      bottomBoxRightImg: "/try2.jpg",
       bottomBoxBg: "bg-orange-200",
     },
     {
       id: 2,
-      heading: "The Oslo Loveseat",
-      subtext: "Light Upholstery, Wood Frame",
-      mainImg: "/SOFAH2.png",
+      heading: "Elegant Living Spaces",
+      subtext: "Modern Family Lounge",
+      mainImg: "/try2.jpg",
       bgColor: "bg-[#F9F1EB]",
       bgCircleMobile: "bg-[#FBF6F2]",
       bgRightMobile: "bg-[#EEDCCD]",
       bgCircleDesktop: "bg-[#FBF6F2]",
       bgRightDesktop: "bg-[#EEDCCD]",
       bottomBoxLeft: "Next",
-      bottomBoxRightImg: "/SOFAH1.webp",
+      bottomBoxRightImg: "/try3.jpg",
+      bottomBoxBg: "bg-[#E9F8F7]",
+    },
+        {
+      id: 3,
+      heading: "Modern Workspace",
+      subtext: "Light Creative Office Solutions",
+      mainImg: "/try3.jpg",
+      bgColor: "bg-[#E9FAFB]",
+      bgCircleMobile: "bg-[#F0FCFC]",
+      bgRightMobile: "bg-[#CCF0EF]",
+      bgCircleDesktop: "bg-[#F0FCFC]",
+      bgRightDesktop: "bg-[#CCF0EF]",
+      bottomBoxLeft: "Next",
+      bottomBoxRightImg: "/try1.jpg",
       bottomBoxBg: "bg-[#E9F8F7]",
     },
   ];
@@ -44,7 +58,7 @@ export default function Home() {
 
   return (
     <section
-      className={`relative w-full lg:h-[50rem]  h-[50rem] flex items-center justify-center overflow-hidden ${hero.bgColor}`}
+      className={`relative w-full lg:h-[50rem]  h-[55rem] flex items-center justify-center overflow-hidden ${hero.bgColor}`}
     >
       {/* Desktop Half-Circle */}
       <div className="absolute inset-0 flex justify-end items-center">
@@ -80,7 +94,7 @@ export default function Home() {
       </div>
 
       {/* Content Layer */}
-      <div className=" z-10  pt-19 pb-10 flex flex-col md:flex-row items-center justify-evenly px-6 md:px-12 text-center md:text-left w-full">
+      <div className=" z-10   pt-19 pb-10 flex flex-col md:flex-row items-center justify-evenly px-6 md:px-12 text-center md:text-left w-full">
         {/* Left Text Content */}
         <motion.div
           key={`text-${currentHero}`}
@@ -113,7 +127,7 @@ export default function Home() {
             <img
               src={hero.mainImg}
               alt="furniture"
-              className="md:w-[1000px]  pt-10 md:ml-[8rem] ml-[1rem]"
+              className="lg:w-[40rem] lg:h-[40rem] md:w-[30rem]  md:h-[30rem] w-[20rem] h-[20rem] md:ml-10 rounded-full "
             />
           </motion.div>
         </AnimatePresence>
@@ -121,7 +135,7 @@ export default function Home() {
 
       {/* Bottom Box */}
       <div
-        className={`absolute bottom-0 md:left-4 ${hero.bottomBoxBg} md:w-72 md:h-40 w-50 h-30 rounded-lg z-10 flex overflow-hidden`}
+        className={`absolute bottom-0 md:left-4 ${hero.bottomBoxBg}  md:w-72 md:h-40 w-50 h-30 rounded-lg z-10 flex overflow-hidden`}
       >
         {/* Left Half */}
         <div
@@ -136,7 +150,7 @@ export default function Home() {
           <img
             src={hero.bottomBoxRightImg}
             alt="Sofa2"
-            className=" object-cover rounded-lg"
+            className=" object-cover w-full h-full"
           />
         </div>
       </div>
