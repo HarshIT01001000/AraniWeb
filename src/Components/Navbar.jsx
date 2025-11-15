@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiPhone } from "react-icons/fi";   // ✅ FiPhone added here
 import { FaWhatsapp } from "react-icons/fa";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,44 +62,28 @@ export default function Navbar() {
         </div>
 
         {/* RIGHT SECTION */}
-        <div className="hidden md:flex lg:text-xl xl:text-2xl items-center gap-6 text-[#0B2D4B]">
-          <div className="relative group">
-            <p className="font-semibold cursor-pointer hover:text-green-600 transition">
-              Call us
-            </p>
+<div className="hidden md:flex lg:text-xl xl:text-2xl items-center gap-6 text-[#0B2D4B]">
 
-            {/* Dropdown with numbers */}
-            <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg p-3 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              <p
-                className="text-sm text-gray-700 hover:text-green-600 cursor-pointer"
-                onClick={() => {
-                  navigator.clipboard.writeText("9892755754");
-                  alert("Copied: 9892755754");
-                }}
-              >
-                📞 9892755754
-              </p>
-              <p
-                className="text-sm text-gray-700 hover:text-green-600 cursor-pointer mt-2"
-                onClick={() => {
-                  navigator.clipboard.writeText("9821155754");
-                  alert("Copied: 9821155754");
-                }}
-              >
-                📞 9821155754a
-              </p>
-            </div>
-          </div>
+  {/* CALL ICON */}
+  <a
+    href="tel:9892755754"
+    className="text-3xl hover:text-green-600 transition"
+  >
+    <FiPhone />
+  </a>
 
-          <a
-            href="https://wa.me/9892755754"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold cursor-pointer hover:text-green-600 transition"
-          >
-            Talk with us
-          </a>
-        </div>
+  {/* CHAT ICON (WhatsApp) */}
+  <a
+    href="https://wa.me/9892755754"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-3xl hover:text-green-600 transition"
+  >
+    <FaWhatsapp />
+  </a>
+
+</div>
+
 
         {/* MOBILE MENU BUTTON */}
         <button
